@@ -1,0 +1,60 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+.main {
+width: 100vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 30px;
+}
+
+.white-background {
+background-color: white !important;
+}
+
+.todo {
+    color:rgb(90, 89, 89);
+}
+
+.send-radio-div {
+
+font-size: 0.8rem;
+}
+
+#number-days {
+width: 3rem;
+}
+
+.panel {
+padding: 20px;
+border: solid rgb(192, 191, 191) 1px;
+border-radius: 6px;
+position: relative;
+display: flex;
+width: 25rem;
+align-items: center;
+justify-content: space-around;
+background-color: white;
+
+}
+
+.panel:hover {
+transform:scale(1.05);
+}
+
+.layout {
+width: 90%;
+}
+
+i {
+color: rgb(202, 200, 200);
+}
