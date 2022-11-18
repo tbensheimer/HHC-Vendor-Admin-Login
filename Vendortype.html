@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Types and Categories</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/21a81ba6b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+<main class="main">
+
+  <h2 class="title mb-4 mt-4">Manage Types and Categories</h2>
+
+  <div class="table-container">
+  
+    <table class="types-cats-data table border">
+      <tr>
+        <th>Types and Categories</th>
+    </tr>
+     
+  </table>
+  </div>
+  
+  <button type="text" class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#addTypeCatModal">Add Type</button>
+
+    <!-------- Modal ---------->
+    <div class="modal fade" id="addTypeCatModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Add Type and Categories</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="alert alert-success hidden added-type-alert">Successfully added a Type!</div>
+            <div class="alert alert-danger type-error-alert hidden">Please add a Type and Category</div>
+            <label for="modal-type" hidden>Add a Type</label>
+            <h5 class="mb-2 fw-bold">Type: </h5><input id="modal-type" type="text" name="type" class="form-control modal-type-input mb-4" placeholder="Add a Type..." />
+            <label for="modal-category" hidden>Add a Category</label>
+            <h5 class="mb-2 fw-bold">Category: </h5><input id="modal-category" name="category" type="text" id="modal-category-input" class="form-control modal-category-input mb-4" placeholder="Add one category..." />
+            <button type="text" class="btn btn-primary add-category-input-btn">Add Another Category</button>
+            <button type="text" class="btn btn-danger delete-category-input-btn">Delete Last Category</button>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary modal-add-type-cats-btn">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-------- Modal ---------->
+
+  <div class="panel home-panel mb-4 mt-4">
+    <div class="layout">
+    <h2 class="home-header fs-4 fw-bold title">Home Page</h2>
+    <p class="home-description desc">Go back to home page to do various tasks</p>
+    </div>
+    <span class="house"><i alt="house icon" class="fa-solid fa-house fa-2x"></i></span>
+    <a href="/index.html" class="stretched-link" ></a>
+      </div>
+  
+
+
+</main>
+<script>
+
+ 
+  function editCategory(event) {
+    let contentDiv = event.parentNode.parentNode;
+let lis = contentDiv.querySelectorAll("li");
+lis.forEach(li => {
+li.setAttribute("contenteditable", "true")
+li.classList.add("editable")
+})
+let saveBtn = contentDiv.querySelector(".save-btn")
+saveBtn.classList.remove("hidden");
+event.classList.add("hidden");  
+}
+
+  function saveCategory(event) {
+    let contentDiv = event.parentNode.parentNode;
+let lis = contentDiv.querySelectorAll("li");
+lis.forEach(li => {
+li.setAttribute("contenteditable", "false")
+li.classList.remove("editable")
+})
+let editBtn = contentDiv.querySelector(".edit-btn")
+editBtn.classList.remove("hidden");
+event.classList.add("hidden"); 
+  }
+
+function deleteType(event) {
+let contentDiv = event.parentNode.parentNode;
+let typeTd = contentDiv.parentNode;
+typeTd.remove();
+}
+
+</script>
+<script type="module" src="index.js" defer></script>
+    <script type="module" src="typescats.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
