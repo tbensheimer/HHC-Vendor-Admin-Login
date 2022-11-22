@@ -58,3 +58,203 @@ width: 90%;
 i {
 color: rgb(202, 200, 200);
 }
+
+.desc {
+    color:rgb(126, 125, 125);
+    font-weight: 500;
+    }
+
+    .table th {
+        background-color:rgb(250, 226, 206);
+    }
+
+.table {
+    background-color:rgb(251, 244, 238);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.table-container {
+    width: 45%;
+    min-width: 22rem;
+    max-width: 35rem;
+}
+
+
+
+.companies-data {
+width: 100%;
+}
+
+.white {
+color: white;
+}
+
+.table td, .table th {
+text-align: center;
+vertical-align: middle;
+}
+
+.form-switch {
+width: 1rem;
+margin: auto;
+}
+
+.border th {
+    border: 1px solid white;
+    }
+
+
+.types-td-btn {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+.types-td i {
+color:rgb(61, 59, 59);
+position: absolute;
+right: 10px;
+}
+
+
+.content-div {
+    background-color:rgb(255, 255, 255);
+    transition: transform 5s;
+    position:relative;
+    bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.content-div li {
+    width: 70% !important;
+    }
+
+.content {
+display: none;
+overflow: hidden;
+background-color: azure;
+max-height: 0;
+transform: translateY(-710px);
+}
+
+#notif-form {
+background-color: rgb(230, 240, 251);
+padding: 15px;
+border-radius: 10px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1rem;
+}
+
+#notif-form input {
+    align-self: start
+}
+
+.col-12 {
+background-color: white;
+}
+
+.col-xl-6 {
+width: 100%;
+}
+
+
+.company-types, .company-categories, .company-send-list {
+background-color: white;
+list-style-type: none;
+border-radius: 10px;
+overflow-y: scroll;
+padding: 10px 15px;
+height: 12rem;
+}
+
+.submit {
+margin: 0 auto;
+width: 12rem;
+border-radius: 10px;
+}
+
+.previous-notifs-group {
+background-color:rgb(181, 179, 179);
+width: 90%;
+min-width: 21rem;
+border-radius: 10px;
+padding: 10px 15px;
+}
+
+.prev-notif-message {
+background-color: rgb(240, 237, 237);
+border-radius: 10px;
+padding: 5px;
+}
+
+.prev-notif {
+overflow-y: scroll;
+height: 28rem;
+background-color:rgb(202, 200, 200);
+padding: 10px;
+border-radius: 15px;
+}
+
+.category {
+font-size: 1.1rem;
+padding: 10px;
+border-radius: 10px;
+
+}
+
+.rotate {
+    transform: rotateZ(180deg);
+}
+
+
+
+.ql-toolbar {
+background-color: rgb(245, 234, 204);
+width: 100%;
+}
+
+.ql-editor {
+background-color: white;
+min-height: 10rem;
+width: 100%;
+}
+
+.tabs-content {
+position: relative;
+width: 50%;
+min-width: 23rem;
+max-width: 70rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 10px;
+background-color: rgb(230, 240, 251);
+border: solid 1px black;
+}
+
+.tab1-btn, .tab2-btn {
+position: absolute;
+top: -36px;
+background-color: aliceblue;
+color:black;
+border: none;
+border-radius: 10px 10px 0 0;
+padding: 6px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 550;
+}
+
+.tab1-btn {
+left: 8px
+}
+
+.tab2-btn {
+left: 164px;
+}
