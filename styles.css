@@ -258,3 +258,195 @@ left: 8px
 .tab2-btn {
 left: 164px;
 }
+
+.active-tab, .active-page {
+background-color: rgb(70, 112, 252) !important;
+color: white;
+display: default;
+}
+
+.active-tab {
+height: 5rem;
+}
+
+.editable {
+    border: solid black 1px !important;
+    background-color: rgb(255, 253, 253) !important;
+    align-self: center !important;
+    }
+
+.hidden {
+display: none !important;
+}
+
+.input-category-div {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.category-input {
+width: 75%;
+border-radius: 10px;
+padding:2px;
+}
+
+.notifications-group {
+width: 90%;
+min-width: 21rem;
+}
+
+.notif-title {
+margin-bottom: 70px;
+}
+
+.modal-header {
+    text-align: center;
+    }
+
+    .mini-modal-body1 li, .mini-modal-body2 li {
+    list-style: none;
+    margin-bottom:  2px;;
+    }
+    
+    .mini-modal-body1, .mini-modal-body2 {
+    overflow-y:scroll;
+    height: 15rem;
+    }
+    
+    .mini-modal-body1 {
+        background-color: antiquewhite;
+        padding: 10px;
+        border-radius: 10px;
+        }
+    
+    .mini-modal-body2 {
+    background-color: rgb(222, 234, 249);
+    padding: 10px;
+    border-radius: 10px;
+    }
+
+    .delete-modal {
+    font-family: Arial, Helvetica, sans-serif;
+position: absolute;
+top: 25%;
+left: 25%;
+background-color: white;
+border-radius: 10px;
+box-shadow: 10px 10px 1000px 100px #888888;
+padding: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+    }
+
+    .gray-out {
+background-color: #888888;
+width: 100%;
+height: 100%;
+overflow: scroll;
+z-index: 100;
+    }
+
+    .edit-link {
+background-color: white !important;
+border: .1px solid black;
+border-radius: 3px;
+padding: 4px 8px;
+    }
+
+    .link-icon-book {
+color:rgb(62, 118, 240)
+    }
+
+    .link-icon-building {
+color:#888888;
+    }
+
+    .link-icon-case {
+color: rgb(100, 145, 100);
+    }
+
+    
+
+@media (max-width: 900px) {
+
+.grid {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.panel {
+width: 90%;
+max-width: 22rem;
+background-color: #9b9999;
+    }
+
+.panel .desc {
+width: 99%;
+}
+
+.home-panel {
+background-color: white;
+}
+
+.contacts-table, .contacts-table thead, .contacts-table tbody, .contacts-table th, .contacts-table td, .contacts-table tr { 
+    display: block; 
+}
+
+/* Hide table headers (but not display: none;, for accessibility) */
+.contacts-table th, .contacts-table .header-rows { 
+   display:none;
+}
+
+.contacts-table tr { 
+    border: 1px solid rgb(31, 30, 30);
+    padding: 5px;
+border-radius: 10px;
+width: 100%;
+max-width: 30rem;
+margin-bottom: 15px;
+ }
+
+ .contacts-table td { 
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #ccc; 
+    position: relative;
+    padding-left: 50%; 
+    width: 100%;
+}
+
+.contacts-table td:before { 
+    /* Now like a table header */
+    position: absolute;
+    top: 6px;
+    left: -65px;
+    width: 100%;
+height: 0px;
+    padding-right: 10px; 
+}
+
+/*
+Label the data
+*/
+.contacts-table td:nth-of-type(1):before { content: "First Name";
+    font-weight: bold;
+}
+.contacts-table td:nth-of-type(2):before { content: "Last Name"; 
+    font-weight: bold;  }
+.contacts-table  td:nth-of-type(3):before { content: "Email"; 
+    font-weight: bold;  }
+.contacts-table  td:nth-of-type(4):before { content: "Phone Number"; 
+    font-weight: bold;  }
+
+}
+
+@media (max-width: 450px) {
+
+.companies-data tbody tr th, .companies-data tbody tr td {
+font-size: .8rem;
+}
+}
