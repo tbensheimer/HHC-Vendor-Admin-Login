@@ -178,3 +178,161 @@ typeCatData = [{ type: "Appliances", category: "Microwaves"},
 { type: "Vehicle", category: "Service or Equipment for Replacement/Repair"},
 { type: "Other", category: "Any product or services not listed above-please describe in detail the products and/or services you provide"}
 ];
+
+typeCatData = JSON.stringify(typeCatData);
+
+let appliances = `[
+    "Microwaves",
+    "Refrigerators",
+    "Stoves",
+    "Washers",
+    "Dryers",
+    "Clocks",
+    "Other"
+]`
+
+
+let demonn;
+
+demonn = {
+"Appliances": ["Microwaves", "Refrigerators", "Stoves"],
+"Audio-Visual": ["Stuff", "Things", "Other"],
+"Building and Custodial": ["Hey", "Jobs", "etc"]
+}
+
+let demo = JSON.stringify(demonn);
+
+let prevNotifs;
+
+prevNotifs = [{ sent: "Appliances", body: "This is a notification for Appliances category", date: "10/23/2022 10:23am"},
+{ sent: "HP Inc", body: "This is a notification for HP Inc", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"},
+{ sent: "Audio-Visual", body: "Please send us more supplies", date: "10/23/2022 10:23am"}
+
+];
+
+prevNotifs = JSON.stringify(prevNotifs)
+
+
+let companiesAndTypes;
+
+companiesAndTypes = 
+{
+    'Appliances': ['HP Inc', 'Company 2', 'Company Inc', 'Company 3'],
+    'Audio-Visual': ['HP Inc', 'Co', 'Company I', 'Company 3'],
+    'Building and Custodial': ['HP Inc', 'Company 2', 'Company Inc', 'Company 3'],
+    'Construction related services': ['HP Inc', 'Company 2', 'Company Inc', 'Company 3'],
+    'Computers': ['HP Inc', 'Company 2', 'Company Inc', 'Company 3'],
+    'Floor Coverings': ['HP Inc', 'Company 2', 'Company Inc', 'Company 3'],
+    'Furniture': ['HP Inc', 'Company 2', 'Company Inc', 'Company 3'],
+    'Ground Maintenance': ['HP Inc', 'Company 2', 'Company Inc', 'Company 3'],
+    'Health, Safety, Fire, & Security': ['HP Inc', 'Company 2', 'Company Inc', 'Company 3'],
+    'Incentives & Rewards': ['HP Inc', 'Company 2', 'Company Inc', 'Company 3'],
+    'Medical Supplies': ['HP Inc', 'Company 2', 'Company Inc', 'Company 3'],
+    'Material Handling': ['HP Inc', 'Company 2', 'Company Inc', 'Company 3'],
+    'Office Supplies/Equipment': ['HP Inc', 'Company 2', 'Company Inc', 'Company 3'],
+    'Postage': ['HP Inc', 'Company 2', 'Company Inc', 'Company 3'],
+    'Printing': ['HP Inc', 'Company 2', 'Company Inc', 'Company 3'],
+    'Services': ['HP Inc', 'Company 2', 'Company Inc', 'Company 3'],
+    'Telecommunication': ['HP Inc', 'Company 2', 'Company Inc', 'Company 3'],
+    'Technology': ['HP Inc', 'Company 2', 'Company Inc', 'Company 3'],
+    'Tools': ['HP Inc', 'Company 2', 'Company Inc', 'Company 3'],
+    'Transportation': ['HP Inc', 'Company 2', 'Company Inc', 'Company 3'],
+    'Vehicle': ['HP Inc', 'Company 2', 'Company Inc', 'Company 3'],
+    'Other': ['HP Inc', 'Company 2', 'Company Inc', 'Company 3']
+}
+
+companiesAndTypes = JSON.stringify(companiesAndTypes)
+
+let companyData;
+
+companyData = `{
+    "HP Inc": {
+"Email (Username)": "HP@gmail.com",
+"Password": "dkladlkljdf",
+"Name": "HP Inc",
+    "Federal ID or SSN": "333-33-3333",
+    "Supplier Category": "US Entity",
+    "Website": "www.HP.com",
+    "Diversity Certification": "Not Certified",
+    "Address": "1222 Wayne Brooke Dr",
+    "City": "Indianapolis",
+    "State": "Indiana",
+    "Postal Code": "44444"
+},
+"Toyota": {
+    "Email (Username)": "Toyota.com",
+    "Password": "dkladlkljdf",
+    "Name": "HP Inc",
+        "Federal ID or SSN": "333-33-3333",
+        "Supplier Category": "US Entity",
+        "Website": "www.HP.com",
+        "Diversity Certification": "Not Certified",
+        "Address": "1222 Wayne Brooke Dr",
+        "City": "Indianapolis",
+        "State": "Indiana",
+        "Postal Code": "44444"
+    },
+    "Epic": {
+        "Email (Username)": "HP@gmail.com",
+        "Password": "dkladlkljdf",
+        "Name": "HP Inc",
+            "Federal ID or SSN": "333-33-3333",
+            "Supplier Category": "US Entity",
+            "Website": "www.HP.com",
+            "Diversity Certification": "Not Certified",
+            "Address": "1222 Wayne Brooke Dr",
+            "City": "Indianapolis",
+            "State": "Indiana",
+            "Postal Code": "44444"
+        },
+        "Construction Inc": {
+            "Email (Username)": "HP@gmail.com",
+            "Password": "dkladlkljdf",
+            "Name": "HP Inc",
+                "Federal ID or SSN": "333-33-3333",
+                "Supplier Category": "US Entity",
+                "Website": "www.HP.com",
+                "Diversity Certification": "Not Certified",
+                "Address": "1222 Wayne Brooke Dr",
+                "City": "Indianapolis",
+                "State": "Indiana",
+                "Postal Code": "44444"
+            },
+            "Medical Co": {
+                "Email (Username)": "HP@gmail.com",
+                "Password": "dkladlkljdf",
+                "Name": "HP Inc",
+                    "Federal ID or SSN": "333-33-3333",
+                    "Supplier Category": "US Entity",
+                    "Website": "www.HP.com",
+                    "Diversity Certification": "Not Certified",
+                    "Address": "1222 Wayne Brooke Dr",
+                    "City": "Indianapolis",
+                    "State": "Indiana",
+                    "Postal Code": "44444"
+                }
+}`
+
+
+export {contactsData, companyData, typeData, companiesRegistered, typeCatData, appliances, demo, prevNotifs, companiesAndTypes}
